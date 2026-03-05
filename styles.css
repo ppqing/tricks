@@ -1,0 +1,97 @@
+/* Additional styles for Game & AI News Monitor */
+
+/* Enhancements for better visual appeal */
+.news-card {
+    border: 1px solid #e9ecef;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.news-card:hover {
+    border-color: #4361ee;
+}
+
+.card-title {
+    color: #212529;
+}
+
+.card-title:hover {
+    color: #4361ee;
+}
+
+.read-more i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.read-more:hover i {
+    transform: translateX(3px);
+}
+
+/* Animation for loading */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+/* Responsive improvements */
+@media (max-width: 576px) {
+    header {
+        padding: 2rem 0;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .tab-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Color theme variations based on category */
+.news-card[data-category="game"] .card-category {
+    background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+    color: white;
+}
+
+.news-card[data-category="ai"] .card-category {
+    background: linear-gradient(135deg, #4cc9f0, #62d3f5);
+    color: white;
+}
+
+/* GitHub corner ribbon */
+.github-corner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.github-corner svg {
+    fill: #151513;
+    color: #fff;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0%, 100% { transform: rotate(0); }
+    20%, 60% { transform: rotate(-25deg); }
+    40%, 80% { transform: rotate(10deg); }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm { animation: none; }
+    .github-corner .octo-arm { animation: octocat-wave 560ms ease-in-out; }
+}

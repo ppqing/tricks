@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game & AI News Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3a0ca3;
+            --game-color: #ff6b6b;
+            --ai-color: #4cc9f0;
+            --bg-color: #f8f9fa;
+            --card-color: #ffffff;
+            --text-primary: #212529;
+            --text-secondary: #6c757d;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .last-updated {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .tab-button {
+            background-color: white;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .tab-button.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .news-card {
+            background-color: var(--card-color);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-header {
+            padding: 1.5rem 1.5rem 0.5rem;
+        }
+
+        .card-category {
+            display: inline-block;
+            padding: 0.35rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-game {
+            background-color: rgba(255, 107, 107, 0.15);
+            color: var(--game-color);
+        }
+
+        .category-ai {
+            background-color: rgba(76, 201, 240, 0.15);
+            color: var(--ai-color);
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .card-body {
+            padding: 0 1.5rem 1rem;
+        }
+
+        .card-description {
+            color: var(--text-secondary);
+            margin-bottom: 1.2rem;
+            line-height: 1.5;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .card-source {
+            font-weight: 600;
+        }
+
+        .card-date {
+            opacity: 0.8;
+        }
+
+        .card-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .read-more {
+            background-color: transparent;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .loading-spinner {
+            text-align: center;
+            padding: 3rem;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            margin-top: 3rem;
+            border-top: 1px solid #eee;
+            color: var(--text-secondary);
+        }
+
+        .github-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .github-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tab-button {
+                padding: 0.6rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-newspaper"></i> Game & AI News Monitor</h1>
+            <p class="tagline">Daily updates on the latest in gaming and artificial intelligence</p>
+            <div class="last-updated">Last updated: <span id="last-updated-time">Loading...</span></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="category-tabs">
+            <button class="tab-button active" data-category="all">All News</button>
+            <button class="tab-button" data-category="game">Games</button>
+            <button class="tab-button" data-category="ai">AI</button>
+        </div>
+
+        <div id="news-container" class="news-grid">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i> Loading latest news...
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Game & AI News Monitor - Automatic daily updates</p>
+            <p>News collected from multiple sources, updated daily via GitHub Actions</p>
+            <p>
+                <a href="https://github.com/ppqing/tricks" class="github-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

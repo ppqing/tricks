@@ -1,0 +1,166 @@
+{
+  "lastUpdated": "2026-03-05T20:55:34.913037",
+  "articleCount": 16,
+  "articles": [
+    {
+      "id": 1,
+      "title": "New AI Model Can Generate Realistic Synthetic Images From Text",
+      "description": "Breakthrough in generative AI produces photorealistic images from simple text descriptions.",
+      "category": "ai",
+      "source": "ArXiv",
+      "date": "2026-03-04",
+      "url": "#",
+      "readingTime": "5 min"
+    },
+    {
+      "id": 2,
+      "title": "Nintendo Announces Next-Gen Console for 2025",
+      "description": "Nintendo has officially confirmed development of its next-generation gaming console, promising innovative gameplay experiences.",
+      "category": "game",
+      "source": "GameSpot",
+      "date": "2026-03-03",
+      "url": "#",
+      "readingTime": "3 min"
+    },
+    {
+      "id": 3,
+      "title": "PlayStation VR2 Gets Major Software Update",
+      "description": "Sony enhances PSVR2 with new social features, improved passthrough, and expanded game library.",
+      "category": "game",
+      "source": "Eurogamer",
+      "date": "2026-03-05",
+      "url": "#",
+      "readingTime": "4 min"
+    },
+    {
+      "id": 4,
+      "title": "Meta's AI Research Unveils Real-Time Language Translation Model",
+      "description": "SeamlessM4T model provides high-quality translation across 100+ languages with near-instantaneous results.",
+      "category": "ai",
+      "source": "Meta AI Blog",
+      "date": "2026-02-27",
+      "url": "#",
+      "readingTime": "5 min"
+    },
+    {
+      "id": 5,
+      "title": "Nintendo Announces Next-Gen Console for 2025",
+      "description": "Nintendo has officially confirmed development of its next-generation gaming console, promising innovative gameplay experiences.",
+      "category": "game",
+      "source": "Rock Paper Shotgun",
+      "date": "2026-03-03",
+      "url": "#",
+      "readingTime": "3 min"
+    },
+    {
+      "id": 6,
+      "title": "OpenAI Releases GPT-5 with Multimodal Capabilities",
+      "description": "The latest iteration of OpenAI's language model now supports seamless text, image, and audio interactions.",
+      "category": "ai",
+      "source": "TechCrunch",
+      "date": "2026-03-03",
+      "url": "#",
+      "readingTime": "4 min"
+    },
+    {
+      "id": 7,
+      "title": "Valve Announces Counter-Strike 2 Major Update",
+      "description": "Latest update introduces new maps, weapons balance changes, and anti-cheat improvements.",
+      "category": "game",
+      "source": "Steam Blog",
+      "date": "2026-03-05",
+      "url": "#",
+      "readingTime": "5 min"
+    },
+    {
+      "id": 8,
+      "title": "New Indie Game 'Stray Souls' Takes Steam by Storm",
+      "description": "Psychological horror game developed by a small indie studio has become a surprise hit on Steam.",
+      "category": "game",
+      "source": "PC Gamer",
+      "date": "2026-03-03",
+      "url": "#",
+      "readingTime": "4 min"
+    },
+    {
+      "id": 9,
+      "title": "Xbox Game Pass Reaches 50 Million Subscribers",
+      "description": "Microsoft's subscription service continues to grow, with new titles added monthly and expanded cloud gaming capabilities.",
+      "category": "game",
+      "source": "The Verge",
+      "date": "2026-03-01",
+      "url": "#",
+      "readingTime": "3 min"
+    },
+    {
+      "id": 10,
+      "title": "AI Breakthrough: Protein Folding Prediction Achieves 95% Accuracy",
+      "description": "New deep learning model dramatically improves accuracy in predicting protein structures, advancing drug discovery.",
+      "category": "ai",
+      "source": "Analytics Vidhya",
+      "date": "2026-03-04",
+      "url": "#",
+      "readingTime": "7 min"
+    },
+    {
+      "id": 11,
+      "title": "Xbox Game Pass Reaches 50 Million Subscribers",
+      "description": "Microsoft's subscription service continues to grow, with new titles added monthly and expanded cloud gaming capabilities.",
+      "category": "game",
+      "source": "The Verge",
+      "date": "2026-03-01",
+      "url": "#",
+      "readingTime": "3 min"
+    },
+    {
+      "id": 12,
+      "title": "PlayStation VR2 Gets Major Software Update",
+      "description": "Sony enhances PSVR2 with new social features, improved passthrough, and expanded game library.",
+      "category": "game",
+      "source": "Eurogamer",
+      "date": "2026-03-04",
+      "url": "#",
+      "readingTime": "4 min"
+    },
+    {
+      "id": 13,
+      "title": "AI-Powered Code Assistant Reduces Development Time by 40%",
+      "description": "Enterprise study shows significant productivity gains when using AI pair programming tools.",
+      "category": "ai",
+      "source": "AI Weekly",
+      "date": "2026-03-03",
+      "url": "#",
+      "readingTime": "4 min"
+    },
+    {
+      "id": 14,
+      "title": "New AAA Game Release: Cyberpunk 2077 Phantom Liberty",
+      "description": "CD Projekt Red has released the Phantom Liberty expansion for Cyberpunk 2077, introducing new storylines and gameplay mechanics.",
+      "category": "game",
+      "source": "IGN",
+      "date": "2026-03-02",
+      "url": "#",
+      "readingTime": "5 min"
+    },
+    {
+      "id": 15,
+      "title": "New AAA Game Release: Cyberpunk 2077 Phantom Liberty",
+      "description": "CD Projekt Red has released the Phantom Liberty expansion for Cyberpunk 2077, introducing new storylines and gameplay mechanics.",
+      "category": "game",
+      "source": "IGN",
+      "date": "2026-03-02",
+      "url": "#",
+      "readingTime": "5 min"
+    },
+    {
+      "id": 16,
+      "title": "Google DeepMind Develops AI That Masters Complex Strategy Games",
+      "description": "New AI system demonstrates human-level performance in games requiring long-term planning and strategy.",
+      "category": "ai",
+      "source": "Nature",
+      "date": "2026-03-03",
+      "url": "#",
+      "readingTime": "6 min"
+    }
+  ]
+}
