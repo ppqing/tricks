@@ -1,10 +1,10 @@
-name: Update News Daily
+name: 每日更新新闻数据
 
 on:
   schedule:
-    # Run daily at 09:00 UTC
+    # 每天 09:00 UTC 运行
     - cron: '0 9 * * *'
-  workflow_dispatch:  # Allow manual triggering
+  workflow_dispatch:  # 允许手动触发
   push:
     branches:
       - main
@@ -13,26 +13,30 @@ jobs:
   update-news:
     runs-on: ubuntu-latest
     
+    # 需要写权限才能推送更新
+    permissions:
+      contents: write
+    
     steps:
-    - name: Checkout repository
+    - name: 检出仓库
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Set up Python
+    - name: 设置Python环境
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
 
-    - name: Install dependencies
+    - name: 安装依赖
       run: |
         python -m pip install --upgrade pip
         pip install requests
 
-    - name: Run news fetcher
+    - name: 运行新闻抓取脚本
       run: python fetch_news.py
 
-    - name: Check for changes
+    - name: 检查是否有变更
       id: git-check
       run: |
         git config --global user.name 'github-actions'
@@ -44,8 +48,14 @@ jobs:
           echo "changes=true" >> $GITHUB_OUTPUT
         fi
 
-    - name: Commit and push updates
+    - name: 提交并推送更新
       if: steps.git-check.outputs.changes == 'true'
       run: |
-        git commit -m "Update news data [Automated]"
-        git push
+        git commit -m "更新新闻数据 [自动]"
+        git push origin HEAD:main
+        
+    - name: 执行完成通知
+      if: steps.git-check.outputs.changes == 'true'
+      run: |
+        echo "✅ 新闻数据更新完成"
+        echo "📰 新闻已自动更新到最新"

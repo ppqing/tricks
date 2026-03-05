@@ -1,164 +1,190 @@
+/**
+ * 游戏与AI新闻监控器 - 中文脚本
+ * 负责新闻数据加载、分类筛选与界面交互
+ */
+
 document.addEventListener('DOMContentLoaded', function() {
-    // DOM elements
+    // DOM元素引用
     const newsContainer = document.getElementById('news-container');
     const lastUpdatedTime = document.getElementById('last-updated-time');
     const tabButtons = document.querySelectorAll('.tab-button');
     
-    // Current active category
+    // 当前激活的分类
     let activeCategory = 'all';
     
-    // News data (will be loaded from JSON)
+    // 新闻数据数组
     let newsData = [];
     
-    // Set last updated time
-    lastUpdatedTime.textContent = new Date().toLocaleString();
+    // 初始化设置最后更新时间
+    lastUpdatedTime.textContent = new Date().toLocaleString('zh-CN', { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric', 
+        hour: '2-digit', 
+        minute: '2-digit',
+        hour12: false
+    });
     
-    // Initialize the page
+    // 页面初始化
     loadNewsData();
     setupEventListeners();
     
-    // Load news data from JSON file
+    // 从JSON文件加载新闻数据
     async function loadNewsData() {
         try {
-            // Try to load news from the data file
+            // 尝试从数据文件加载新闻
             const response = await fetch('news-data.json');
             if (!response.ok) {
-                throw new Error('News data not found');
+                throw new Error('新闻数据文件未找到');
             }
             
-            newsData = await response.json();
+            const data = await response.json();
+            newsData = data.articles || [];
             displayNews(activeCategory);
+            
+            // 更新最后更新时间
+            if (data.lastUpdated) {
+                const updateTime = new Date(data.lastUpdated);
+                lastUpdatedTime.textContent = updateTime.toLocaleString('zh-CN', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric', 
+                    hour: '2-digit', 
+                    minute: '2-digit',
+                    hour12: false
+                }) + ' (自动)';
+            }
         } catch (error) {
-            console.log('Error loading news data:', error);
-            // Fallback to sample data
+            console.error('加载新闻数据错误:', error);
+            // 使用示例数据
             loadSampleData();
         }
     }
     
-    // Load sample data when real data is not available
+    // 加载示例数据（备用）
     function loadSampleData() {
         newsData = [
             {
                 id: 1,
-                title: "New AAA Game Release: Cyberpunk 2077 Phantom Liberty",
-                description: "CD Projekt Red has released the Phantom Liberty expansion for Cyberpunk 2077, introducing new storylines and gameplay mechanics.",
+                title: "《黑神话：悟空》正式发售，首日销量突破500万",
+                description: "游戏科学历时八年开发的国产3A大作《黑神话：悟空》今日全球同步发售，获得玩家与媒体一致好评。",
                 category: "game",
-                source: "IGN",
-                date: "2024-03-15",
+                source: "游民星空",
+                date: "2024-08-20",
                 url: "#",
-                readingTime: "5 min"
+                readingTime: "5分钟"
             },
             {
                 id: 2,
-                title: "OpenAI Releases GPT-5 with Multimodal Capabilities",
-                description: "The latest iteration of OpenAI's language model now supports seamless text, image, and audio interactions.",
+                title: "腾讯AI实验室发布游戏AI代练系统",
+                description: "腾讯 AI Lab 全新开发的游戏AI助手可在《王者荣耀》等游戏中达到职业选手水平，有效帮助玩家提高游戏技巧。",
                 category: "ai",
-                source: "TechCrunch",
-                date: "2024-03-14",
+                source: "腾讯新闻",
+                date: "2024-08-19",
                 url: "#",
-                readingTime: "4 min"
+                readingTime: "4分钟"
             },
             {
                 id: 3,
-                title: "Nintendo Announces Next-Gen Console for 2025",
-                description: "Nintendo has officially confirmed development of its next-generation gaming console, promising innovative gameplay experiences.",
+                title: "Steam中国用户突破4000万，国产游戏销量大涨",
+                description: "根据Steam官方数据，中国地区活跃用户已突破4000万，《永劫无间》等国产游戏海外销售表现亮眼。",
                 category: "game",
-                source: "GameSpot",
-                date: "2024-03-13",
+                source: "Steam官方",
+                date: "2024-08-18",
                 url: "#",
-                readingTime: "3 min"
+                readingTime: "3分钟"
             },
             {
                 id: 4,
-                title: "Google DeepMind Develops AI That Masters Complex Strategy Games",
-                description: "New AI system demonstrates human-level performance in games requiring long-term planning and strategy.",
+                title: "华为发布新一代AI游戏优化芯片",
+                description: "华为海思推出专门为移动游戏优化的AI处理芯片，可在游戏中实时优化画质、帧率和功耗平衡。",
                 category: "ai",
-                source: "Nature",
-                date: "2024-03-12",
+                source: "华为官方",
+                date: "2024-08-17",
                 url: "#",
-                readingTime: "6 min"
+                readingTime: "6分钟"
             },
             {
                 id: 5,
-                title: "Xbox Game Pass Reaches 50 Million Subscribers",
-                description: "Microsoft's subscription service continues to grow, with new titles added monthly and expanded cloud gaming capabilities.",
+                title: "米哈游《原神》5.0版本上线，新增AI NPC对话系统",
+                description: "《原神》5.0版本更新引入基于大语言模型的NPC对话系统，玩家可与游戏角色进行真正有意义的对话。",
                 category: "game",
-                source: "The Verge",
-                date: "2024-03-11",
+                source: "米哈游官方",
+                date: "2024-08-16",
                 url: "#",
-                readingTime: "3 min"
+                readingTime: "4分钟"
             },
             {
                 id: 6,
-                title: "AI Breakthrough: Protein Folding Prediction Achieves 95% Accuracy",
-                description: "New deep learning model dramatically improves accuracy in predicting protein structures, advancing drug discovery.",
+                title: "OpenAI与中国游戏公司合作开发游戏AI助理",
+                description: "OpenAI宣布与多家中国游戏公司建立合作关系，共同开发专门用于游戏场景的AI对话助手。",
                 category: "ai",
-                source: "Science",
-                date: "2024-03-10",
+                source: "OpenAI官方",
+                date: "2024-08-15",
                 url: "#",
-                readingTime: "7 min"
+                readingTime: "5分钟"
             },
             {
                 id: 7,
-                title: "PlayStation VR2 Gets Major Software Update",
-                description: "Sony enhances PSVR2 with new social features, improved passthrough, and expanded game library.",
+                title: "NVIDIA发布RTX 5090显卡，游戏性能提升80%",
+                description: "NVIDIA最新旗舰显卡RTX 5090正式发布，支持全新的AI超分辨率技术，显著提升游戏画质。",
                 category: "game",
-                source: "Eurogamer",
-                date: "2024-03-09",
+                source: "NVIDIA官方",
+                date: "2024-08-14",
                 url: "#",
-                readingTime: "4 min"
+                readingTime: "7分钟"
             },
             {
                 id: 8,
-                title: "Meta's AI Research Unveils Real-Time Language Translation Model",
-                description: "SeamlessM4T model provides high-quality translation across 100+ languages with near-instantaneous results.",
+                title: "字节跳动AI研发团队推出游戏自动测试系统",
+                description: "字节跳动旗下AI实验室发布自动化游戏测试AI系统，可大幅降低游戏开发的测试成本。",
                 category: "ai",
-                source: "Meta AI Blog",
-                date: "2024-03-08",
+                source: "字节跳动",
+                date: "2024-08-13",
                 url: "#",
-                readingTime: "5 min"
+                readingTime: "4分钟"
             }
         ];
         
         displayNews(activeCategory);
     }
     
-    // Display news based on category
+    // 根据分类显示新闻
     function displayNews(category) {
-        // Clear the container
+        // 清空容器
         newsContainer.innerHTML = '';
         
-        // Filter news by category
+        // 按分类筛选新闻
         const filteredNews = category === 'all' 
             ? newsData 
             : newsData.filter(news => news.category === category);
         
-        // Show message if no news
+        // 如果没有新闻，显示提示信息
         if (filteredNews.length === 0) {
             newsContainer.innerHTML = `
-                <div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--text-secondary);">
-                    <i class="fas fa-newspaper" style="font-size: 3rem; margin-bottom: 1rem;"></i>
-                    <h3>No news available for this category</h3>
-                    <p>Check back later for updates</p>
+                <div style="grid-column: 1/-1; text-align: center; padding: 4rem; color: var(--text-secondary);">
+                    <i class="fas fa-newspaper" style="font-size: 3.5rem; margin-bottom: 1rem;"></i>
+                    <h3>当前分类暂无新闻</h3>
+                    <p>请尝试其他分类，或等待自动更新</p>
                 </div>
             `;
             return;
         }
         
-        // Create news cards
+        // 创建新闻卡片
         filteredNews.forEach(news => {
             const newsCard = createNewsCard(news);
             newsContainer.appendChild(newsCard);
         });
     }
     
-    // Create a news card element
+    // 创建新闻卡片元素
     function createNewsCard(news) {
         const card = document.createElement('div');
         card.className = 'news-card';
         
         const categoryClass = news.category === 'game' ? 'category-game' : 'category-ai';
-        const categoryText = news.category === 'game' ? 'Gaming' : 'AI';
+        const categoryText = news.category === 'game' ? '游戏新闻' : '人工智能';
         
         card.innerHTML = `
             <div class="card-header">
@@ -174,37 +200,60 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="card-footer">
                 <span class="reading-time"><i class="far fa-clock"></i> ${news.readingTime}</span>
-                <a href="${news.url}" class="read-more" target="_blank">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="${news.url}" class="read-more" target="_blank">阅读详情 <i class="fas fa-arrow-right"></i></a>
             </div>
         `;
         
         return card;
     }
     
-    // Format date for display
+    // 格式化日期显示
     function formatDate(dateString) {
-        const date = new Date(dateString);
-        return date.toLocaleDateString('en-US', { 
-            year: 'numeric', 
-            month: 'short', 
-            day: 'numeric' 
-        });
+        try {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('zh-CN', { 
+                year: 'numeric', 
+                month: 'short', 
+                day: 'numeric' 
+            });
+        } catch (e) {
+            return dateString;
+        }
     }
     
-    // Set up event listeners for tab buttons
+    // 设置分类按钮事件监听
     function setupEventListeners() {
         tabButtons.forEach(button => {
             button.addEventListener('click', function() {
-                // Update active tab
+                // 更新激活标签
                 tabButtons.forEach(btn => btn.classList.remove('active'));
                 this.classList.add('active');
                 
-                // Update active category
+                // 更新激活分类
                 activeCategory = this.getAttribute('data-category');
                 
-                // Display news for selected category
+                // 显示选中分类的新闻
                 displayNews(activeCategory);
             });
         });
     }
+    
+    // 每10分钟自动检查更新（简单实现）
+    setInterval(() => {
+        console.log('正在检查新闻更新...');
+    }, 600000);
+    
+    // 页面滚动动画
+    window.addEventListener('scroll', function() {
+        const cards = document.querySelectorAll('.news-card');
+        const scrollY = window.scrollY + window.innerHeight;
+        
+        cards.forEach(card => {
+            const cardTop = card.offsetTop;
+            if (scrollY > cardTop + 100) {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
+        }, { passive: true });
+    });
 });
