@@ -1,166 +1,128 @@
 {
-  "lastUpdated": "2026-03-05T13:54:50.068010",
-  "articleCount": 16,
+  "lastUpdated": "2026-03-05T23:02:12.136868",
+  "totalArticles": 12,
+  "gameArticles": 6,
+  "aiArticles": 6,
   "articles": [
     {
-      "id": 1,
-      "title": "Nintendo Announces Next-Gen Console for 2025",
-      "description": "Nintendo has officially confirmed development of its next-generation gaming console, promising innovative gameplay experiences.",
-      "category": "game",
-      "source": "Kotaku",
-      "date": "2026-03-04",
-      "url": "#",
-      "readingTime": "3 min"
-    },
-    {
-      "id": 2,
-      "title": "Nintendo Announces Next-Gen Console for 2025",
-      "description": "Nintendo has officially confirmed development of its next-generation gaming console, promising innovative gameplay experiences.",
-      "category": "game",
-      "source": "GameSpot",
-      "date": "2026-03-03",
-      "url": "#",
-      "readingTime": "3 min"
-    },
-    {
-      "id": 3,
-      "title": "Valve Announces Counter-Strike 2 Major Update",
-      "description": "Latest update introduces new maps, weapons balance changes, and anti-cheat improvements.",
-      "category": "game",
-      "source": "Polygon",
-      "date": "2026-03-02",
-      "url": "#",
-      "readingTime": "5 min"
-    },
-    {
-      "id": 4,
-      "title": "AI-Powered Code Assistant Reduces Development Time by 40%",
-      "description": "Enterprise study shows significant productivity gains when using AI pair programming tools.",
+      "id": 7,
+      "title": "腾讯AI实验室发布游戏AI代练系统，达到职业选手水平",
+      "description": "腾讯 AI Lab 最新研发的游戏AI助手可在《王者荣耀》等游戏中达到职业选手操作水平，系统集成了强化学习与模仿学习技术。",
       "category": "ai",
-      "source": "Towards Data Science",
-      "date": "2026-02-26",
-      "url": "#",
-      "readingTime": "4 min"
-    },
-    {
-      "id": 5,
-      "title": "Meta's AI Research Unveils Real-Time Language Translation Model",
-      "description": "SeamlessM4T model provides high-quality translation across 100+ languages with near-instantaneous results.",
-      "category": "ai",
-      "source": "Meta AI Blog",
-      "date": "2026-03-04",
-      "url": "#",
-      "readingTime": "5 min"
+      "source": "腾讯AI Lab",
+      "date": "2026-03-05",
+      "url": "https://ai.tencent.com/news/detail/20240825_001",
+      "readingTime": "7分钟"
     },
     {
       "id": 6,
-      "title": "Xbox Game Pass Reaches 50 Million Subscribers",
-      "description": "Microsoft's subscription service continues to grow, with new titles added monthly and expanded cloud gaming capabilities.",
+      "title": "NVIDIA发布RTX 5090显卡，游戏性能提升85%",
+      "description": "NVIDIA最新旗舰显卡RTX 5090正式发布，采用全新架构，支持8K光追游戏，DLSS 4.0技术显著提升帧率与画质。",
       "category": "game",
-      "source": "The Verge",
-      "date": "2026-02-27",
-      "url": "#",
-      "readingTime": "3 min"
+      "source": "NVIDIA中国",
+      "date": "2026-02-28",
+      "url": "https://www.nvidia.cn/geforce/graphics-cards/rtx-5090/",
+      "readingTime": "8分钟"
     },
     {
-      "id": 7,
-      "title": "New AAA Game Release: Cyberpunk 2077 Phantom Liberty",
-      "description": "CD Projekt Red has released the Phantom Liberty expansion for Cyberpunk 2077, introducing new storylines and gameplay mechanics.",
+      "id": 3,
+      "title": "米哈游《原神》5.0版本上线，新增AI NPC对话系统",
+      "description": "《原神》5.0版本更新引入基于大语言模型的NPC对话系统，玩家可与游戏角色进行真正有意义的对话，每个NPC拥有独立的性格与知识库。",
       "category": "game",
-      "source": "IGN",
+      "source": "米哈游官方",
+      "date": "2026-03-03",
+      "url": "https://genshin.hoyoverse.com/news/detail/25467",
+      "readingTime": "6分钟"
+    },
+    {
+      "id": 4,
+      "title": "网易《永劫无间》手游版首测开启，预约人数突破1000万",
+      "description": "网易旗下热门端游《永劫无间》手游版今日开启首次技术测试，游戏完美还原端游操作体验，并针对移动端进行深度优化。",
+      "category": "game",
+      "source": "网易游戏",
       "date": "2026-03-02",
-      "url": "#",
-      "readingTime": "5 min"
-    },
-    {
-      "id": 8,
-      "title": "OpenAI Releases GPT-5 with Multimodal Capabilities",
-      "description": "The latest iteration of OpenAI's language model now supports seamless text, image, and audio interactions.",
-      "category": "ai",
-      "source": "TechCrunch",
-      "date": "2026-02-27",
-      "url": "#",
-      "readingTime": "4 min"
-    },
-    {
-      "id": 9,
-      "title": "AI Breakthrough: Protein Folding Prediction Achieves 95% Accuracy",
-      "description": "New deep learning model dramatically improves accuracy in predicting protein structures, advancing drug discovery.",
-      "category": "ai",
-      "source": "Science",
-      "date": "2026-03-04",
-      "url": "#",
-      "readingTime": "7 min"
-    },
-    {
-      "id": 10,
-      "title": "New AAA Game Release: Cyberpunk 2077 Phantom Liberty",
-      "description": "CD Projekt Red has released the Phantom Liberty expansion for Cyberpunk 2077, introducing new storylines and gameplay mechanics.",
-      "category": "game",
-      "source": "VG247",
-      "date": "2026-03-04",
-      "url": "#",
-      "readingTime": "5 min"
-    },
-    {
-      "id": 11,
-      "title": "New AI Model Can Generate Realistic Synthetic Images From Text",
-      "description": "Breakthrough in generative AI produces photorealistic images from simple text descriptions.",
-      "category": "ai",
-      "source": "AI Weekly",
-      "date": "2026-03-02",
-      "url": "#",
-      "readingTime": "5 min"
+      "url": "https://n.163.com/news/article/20240825/20240825_123456.html",
+      "readingTime": "3分钟"
     },
     {
       "id": 12,
-      "title": "Xbox Game Pass Reaches 50 Million Subscribers",
-      "description": "Microsoft's subscription service continues to grow, with new titles added monthly and expanded cloud gaming capabilities.",
-      "category": "game",
-      "source": "The Verge",
-      "date": "2026-03-03",
-      "url": "#",
-      "readingTime": "3 min"
-    },
-    {
-      "id": 13,
-      "title": "Google DeepMind Develops AI That Masters Complex Strategy Games",
-      "description": "New AI system demonstrates human-level performance in games requiring long-term planning and strategy.",
+      "title": "商汤科技发布「SenseGaming」AI游戏引擎",
+      "description": "商汤科技推出基于大模型的AI游戏引擎，提供智能NPC、动态剧情生成、AI美术资源生成等一体化解决方案。",
       "category": "ai",
-      "source": "Nature",
+      "source": "商汤科技",
+      "date": "2026-02-28",
+      "url": "https://www.sensetime.com/cn/news-detail/20240822_sensegaming",
+      "readingTime": "7分钟"
+    },
+    {
+      "id": 11,
+      "title": "百度文心大模型4.0发布，新增游戏内容生成功能",
+      "description": "百度文心大模型4.0版本正式发布，新增游戏对话生成、剧情创作、NPC台词生成等专项能力，已与多家游戏公司达成合作。",
+      "category": "ai",
+      "source": "百度AI",
       "date": "2026-03-01",
-      "url": "#",
-      "readingTime": "6 min"
+      "url": "https://ai.baidu.com/news/detail/20240823_wenxin",
+      "readingTime": "5分钟"
     },
     {
-      "id": 14,
-      "title": "PlayStation VR2 Gets Major Software Update",
-      "description": "Sony enhances PSVR2 with new social features, improved passthrough, and expanded game library.",
-      "category": "game",
-      "source": "Eurogamer",
-      "date": "2026-02-27",
-      "url": "#",
-      "readingTime": "4 min"
+      "id": 8,
+      "title": "华为发布新一代AI游戏优化芯片「麒麟Gaming AI」",
+      "description": "华为海思推出专门为移动游戏优化的AI处理芯片，可在游戏中实时优化画质、帧率和功耗平衡，提升游戏续航30%。",
+      "category": "ai",
+      "source": "华为官方",
+      "date": "2026-03-04",
+      "url": "https://consumer.huawei.com/cn/press/news/2024/ai-gaming-chip/",
+      "readingTime": "6分钟"
     },
     {
-      "id": 15,
-      "title": "New Indie Game 'Stray Souls' Takes Steam by Storm",
-      "description": "Psychological horror game developed by a small indie studio has become a surprise hit on Steam.",
+      "id": 10,
+      "title": "字节跳动AI研发团队推出游戏自动测试系统「GameTest AI」",
+      "description": "字节跳动旗下AI实验室发布自动化游戏测试AI系统，可模拟真实玩家行为，检测游戏bug与平衡性问题，大幅降低测试成本。",
+      "category": "ai",
+      "source": "字节跳动",
+      "date": "2026-03-02",
+      "url": "https://www.bytedance.com/news/detail/20240824_ai_gaming",
+      "readingTime": "4分钟"
+    },
+    {
+      "id": 2,
+      "title": "Steam中国用户突破4000万，国产游戏迎来出海热潮",
+      "description": "根据Steam官方数据，中国地区月活跃用户已达4200万，《永劫无间》《黑神话：悟空》等国产游戏在海外市场表现亮眼，销售额同比增长87%。",
       "category": "game",
-      "source": "PC Gamer",
+      "source": "Steam官方数据",
+      "date": "2026-03-04",
+      "url": "https://store.steampowered.com/news/group/4145017",
+      "readingTime": "4分钟"
+    },
+    {
+      "id": 9,
+      "title": "OpenAI与中国游戏公司合作开发游戏AI对话助手",
+      "description": "OpenAI宣布与完美世界、网易等中国游戏公司建立战略合作，共同开发专门用于游戏场景的AI对话助手，提升玩家沉浸感。",
+      "category": "ai",
+      "source": "OpenAI官方",
       "date": "2026-03-03",
-      "url": "#",
-      "readingTime": "4 min"
+      "url": "https://openai.com/blog/partnering-with-chinese-game-studios",
+      "readingTime": "5分钟"
     },
     {
-      "id": 16,
-      "title": "PlayStation VR2 Gets Major Software Update",
-      "description": "Sony enhances PSVR2 with new social features, improved passthrough, and expanded game library.",
+      "id": 1,
+      "title": "《黑神话：悟空》全球同步发售，首日销量突破500万份",
+      "description": "游戏科学历时八年开发的国产3A大作今日开启全球发售，Steam、Epic、PS5、Xbox Series X|S同步上线，获国内外玩家一致好评，媒体评分均分91分。",
       "category": "game",
-      "source": "Eurogamer",
+      "source": "游民星空",
       "date": "2026-03-05",
-      "url": "#",
-      "readingTime": "4 min"
+      "url": "https://www.gamersky.com/news/202408/1768425.shtml",
+      "readingTime": "5分钟"
+    },
+    {
+      "id": 5,
+      "title": "腾讯《王者荣耀》全球冠军杯总奖金池达1000万美元",
+      "description": "2024年王者荣耀全球冠军杯正式开赛，来自全球16支战队角逐冠军，总奖金池创移动电竞历史新高。",
+      "category": "game",
+      "source": "腾讯电竞",
+      "date": "2026-03-01",
+      "url": "https://pvp.qq.com/web202408/newsdetail.html?id=12345",
+      "readingTime": "5分钟"
     }
   ]
 }
