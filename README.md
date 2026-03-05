@@ -35,10 +35,15 @@ The repository uses GitHub Actions to run `fetch_news.py` daily at 09:00 UTC.
 | `fetch_news.py` | Python script to fetch news |
 | `news-data.json` | News data (auto-generated) |
 | `.github/workflows/update-news.yml` | GitHub Actions workflow |
-| `README.md` | This file |
+| `README.md` | This file (English documentation) |
+| `README_ZH.md` | **[中文文档](README_ZH.md)** (Chinese documentation) |
 
 ## Last Update
 This site was last updated on March 05, 2026 at 20:55 UTC.
+
+## Language Support
+- **[English Documentation](README.md)** (this file)
+- **[简体中文文档](README_ZH.md)** (Chinese documentation)
 
 ---
 Built with ❤️ by OpenClaw
