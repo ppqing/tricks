@@ -1,128 +1,157 @@
 {
-  "lastUpdated": "2026-03-05T15:03:32.383557",
+  "lastUpdated": "2026-03-06T00:27:02.177197",
   "totalArticles": 12,
   "gameArticles": 6,
   "aiArticles": 6,
   "articles": [
     {
-      "id": 11,
-      "title": "百度文心大模型4.0发布，新增游戏内容生成功能",
-      "description": "百度文心大模型4.0版本正式发布，新增游戏对话生成、剧情创作、NPC台词生成等专项能力，已与多家游戏公司达成合作。",
-      "category": "ai",
-      "source": "百度AI",
-      "date": "2026-03-01",
-      "url": "https://ai.baidu.com/news/detail/20240823_wenxin",
-      "readingTime": "5分钟"
-    },
-    {
-      "id": 5,
-      "title": "腾讯《王者荣耀》全球冠军杯总奖金池达1000万美元",
-      "description": "2024年王者荣耀全球冠军杯正式开赛，来自全球16支战队角逐冠军，总奖金池创移动电竞历史新高。",
-      "category": "game",
-      "source": "腾讯电竞",
-      "date": "2026-03-01",
-      "url": "https://pvp.qq.com/web202408/newsdetail.html?id=12345",
-      "readingTime": "5分钟"
-    },
-    {
-      "id": 6,
-      "title": "NVIDIA发布RTX 5090显卡，游戏性能提升85%",
-      "description": "NVIDIA最新旗舰显卡RTX 5090正式发布，采用全新架构，支持8K光追游戏，DLSS 4.0技术显著提升帧率与画质。",
-      "category": "game",
-      "source": "NVIDIA中国",
-      "date": "2026-02-28",
-      "url": "https://www.nvidia.cn/geforce/graphics-cards/rtx-5090/",
-      "readingTime": "8分钟"
-    },
-    {
-      "id": 9,
-      "title": "OpenAI与中国游戏公司合作开发游戏AI对话助手",
-      "description": "OpenAI宣布与完美世界、网易等中国游戏公司建立战略合作，共同开发专门用于游戏场景的AI对话助手，提升玩家沉浸感。",
-      "category": "ai",
-      "source": "OpenAI官方",
-      "date": "2026-03-03",
-      "url": "https://openai.com/blog/partnering-with-chinese-game-studios",
-      "readingTime": "5分钟"
-    },
-    {
-      "id": 4,
-      "title": "网易《永劫无间》手游版首测开启，预约人数突破1000万",
-      "description": "网易旗下热门端游《永劫无间》手游版今日开启首次技术测试，游戏完美还原端游操作体验，并针对移动端进行深度优化。",
-      "category": "game",
-      "source": "网易游戏",
-      "date": "2026-03-02",
-      "url": "https://n.163.com/news/article/20240825/20240825_123456.html",
-      "readingTime": "3分钟"
-    },
-    {
-      "id": 7,
-      "title": "腾讯AI实验室发布游戏AI代练系统，达到职业选手水平",
-      "description": "腾讯 AI Lab 最新研发的游戏AI助手可在《王者荣耀》等游戏中达到职业选手操作水平，系统集成了强化学习与模仿学习技术。",
-      "category": "ai",
-      "source": "腾讯AI Lab",
-      "date": "2026-03-05",
-      "url": "https://ai.tencent.com/news/detail/20240825_001",
-      "readingTime": "7分钟"
-    },
-    {
       "id": 1,
-      "title": "《黑神话：悟空》全球同步发售，首日销量突破500万份",
-      "description": "游戏科学历时八年开发的国产3A大作今日开启全球发售，Steam、Epic、PS5、Xbox Series X|S同步上线，获国内外玩家一致好评，媒体评分均分91分。",
-      "category": "game",
-      "source": "游民星空",
-      "date": "2026-03-05",
-      "url": "https://www.gamersky.com/news/202408/1768425.shtml",
-      "readingTime": "5分钟"
-    },
-    {
-      "id": 8,
-      "title": "华为发布新一代AI游戏优化芯片「麒麟Gaming AI」",
-      "description": "华为海思推出专门为移动游戏优化的AI处理芯片，可在游戏中实时优化画质、帧率和功耗平衡，提升游戏续航30%。",
+      "title": "阿里通义千问大模型推出企业版",
+      "description": "阿里巴巴通义千问大模型推出企业定制版，支持私有化部署、行业知识库定制、API接口对接等功能。",
       "category": "ai",
-      "source": "华为官方",
+      "source": "阿里巴巴",
       "date": "2026-03-04",
-      "url": "https://consumer.huawei.com/cn/press/news/2024/ai-gaming-chip/",
-      "readingTime": "6分钟"
+      "url": "https://tongyi.aliyun.com/qianwen/enterprise",
+      "readingTime": "4分钟",
+      "_dynamic": true,
+      "_seed": 65
     },
     {
       "id": 2,
-      "title": "Steam中国用户突破4000万，国产游戏迎来出海热潮",
-      "description": "根据Steam官方数据，中国地区月活跃用户已达4200万，《永劫无间》《黑神话：悟空》等国产游戏在海外市场表现亮眼，销售额同比增长87%。",
+      "title": "Steam新品节本月开启，百款独立游戏免费试玩",
+      "description": "Steam新品节于本月15日开始，近百款即将发布的独立游戏提供免费试玩版本，包括多款国产独立游戏。",
       "category": "game",
-      "source": "Steam官方数据",
+      "source": "Steam官方",
       "date": "2026-03-04",
-      "url": "https://store.steampowered.com/news/group/4145017",
-      "readingTime": "4分钟"
+      "url": "https://store.steampowered.com/sale/newonthesteamdemo",
+      "readingTime": "3分钟",
+      "_dynamic": true,
+      "_seed": 65
     },
     {
       "id": 3,
-      "title": "米哈游《原神》5.0版本上线，新增AI NPC对话系统",
-      "description": "《原神》5.0版本更新引入基于大语言模型的NPC对话系统，玩家可与游戏角色进行真正有意义的对话，每个NPC拥有独立的性格与知识库。",
+      "title": "网易《永劫无间》三周年庆典开启",
+      "description": "《永劫无间》开启三周年庆典活动，登录即送限定皮肤、新英雄，同时推出全新战斗通行证。",
       "category": "game",
-      "source": "米哈游官方",
+      "source": "网易游戏",
+      "date": "2026-03-01",
+      "url": "https://yongjie.wanmei.com/anniversary",
+      "readingTime": "5分钟",
+      "_dynamic": true,
+      "_seed": 65
+    },
+    {
+      "id": 4,
+      "title": "Epic商城春节特惠，多款大作历史低价",
+      "description": "Epic商城春节特惠正在进行中，《赛博朋克2077》《战神》《荒野大镖客2》等多款大作参与折扣。",
+      "category": "game",
+      "source": "Epic Games",
+      "date": "2026-03-01",
+      "url": "https://store.epicgames.com/sale/chinese-new-year",
+      "readingTime": "7分钟",
+      "_dynamic": true,
+      "_seed": 65
+    },
+    {
+      "id": 5,
+      "title": "百度文心大模型4.0发布，多项能力突破",
+      "description": "百度文心大模型4.0版本正式发布，在逻辑推理、代码生成、数学计算、多轮对话等方面表现显著提升。",
+      "category": "ai",
+      "source": "百度AI",
       "date": "2026-03-03",
-      "url": "https://genshin.hoyoverse.com/news/detail/25467",
-      "readingTime": "6分钟"
+      "url": "https://ai.baidu.com/news/detail/20240301_wenxin",
+      "readingTime": "7分钟",
+      "_dynamic": true,
+      "_seed": 65
+    },
+    {
+      "id": 6,
+      "title": "智谱AI发布GLM-4大模型，支持128K上下文",
+      "description": "智谱AI发布GLM-4大语言模型，支持128K上下文长度，在代码生成、数学推理、中文理解等方面表现优异。",
+      "category": "ai",
+      "source": "智谱AI",
+      "date": "2026-02-28",
+      "url": "https://www.zhipuai.cn/glm-4",
+      "readingTime": "4分钟",
+      "_dynamic": true,
+      "_seed": 65
+    },
+    {
+      "id": 7,
+      "title": "《崩坏：星穹铁道》2.0版本上线，新增银河地图",
+      "description": "《崩坏：星穹铁道》2.0版本正式上线，开放全新银河地图「匹诺康尼」，新增多位角色与剧情。",
+      "category": "game",
+      "source": "米哈游",
+      "date": "2026-02-27",
+      "url": "https://sr.mihoyo.com/news/detail/20240201",
+      "readingTime": "6分钟",
+      "_dynamic": true,
+      "_seed": 65
+    },
+    {
+      "id": 8,
+      "title": "字节跳动发布AI视频生成工具「Dreamina」",
+      "description": "字节跳动旗下剪映推出AI视频生成工具Dreamina，支持文本生成视频、图片转视频、视频风格迁移等功能。",
+      "category": "ai",
+      "source": "字节跳动",
+      "date": "2026-03-04",
+      "url": "https://www.bytedance.com/news/detail/20240225_dreamina",
+      "readingTime": "3分钟",
+      "_dynamic": true,
+      "_seed": 65
+    },
+    {
+      "id": 9,
+      "title": "商汤科技发布「SenseChat」AI对话助手",
+      "description": "商汤科技发布新一代AI对话助手SenseChat 2.0，支持图像理解、多轮对话、专业知识问答等功能。",
+      "category": "ai",
+      "source": "商汤科技",
+      "date": "2026-03-01",
+      "url": "https://www.sensetime.com/cn/news-detail/20240228_sensechat",
+      "readingTime": "3分钟",
+      "_dynamic": true,
+      "_seed": 65
     },
     {
       "id": 10,
-      "title": "字节跳动AI研发团队推出游戏自动测试系统「GameTest AI」",
-      "description": "字节跳动旗下AI实验室发布自动化游戏测试AI系统，可模拟真实玩家行为，检测游戏bug与平衡性问题，大幅降低测试成本。",
-      "category": "ai",
-      "source": "字节跳动",
-      "date": "2026-03-02",
-      "url": "https://www.bytedance.com/news/detail/20240824_ai_gaming",
-      "readingTime": "4分钟"
+      "title": "米哈游《原神》5.1版本预告，新增水下探索区域",
+      "description": "《原神》5.1版本预告片公开，将开放水下地图探索玩法，同时新增多位角色与剧情任务。",
+      "category": "game",
+      "source": "米哈游官方",
+      "date": "2026-03-01",
+      "url": "https://genshin.hoyoverse.com/news/detail/25468",
+      "readingTime": "5分钟",
+      "_dynamic": true,
+      "_seed": 65
+    },
+    {
+      "id": 11,
+      "title": "腾讯《王者荣耀》世界冠军杯总决赛落幕",
+      "description": "《王者荣耀》世界冠军杯总决赛在杭州落幕，中国战队蝉联冠军，总奖金池达到1200万美元。",
+      "category": "game",
+      "source": "腾讯电竞",
+      "date": "2026-03-06",
+      "url": "https://pvp.qq.com/web202408/newsdetail.html?id=12346",
+      "readingTime": "5分钟",
+      "_dynamic": true,
+      "_seed": 65
     },
     {
       "id": 12,
-      "title": "商汤科技发布「SenseGaming」AI游戏引擎",
-      "description": "商汤科技推出基于大模型的AI游戏引擎，提供智能NPC、动态剧情生成、AI美术资源生成等一体化解决方案。",
+      "title": "中国AI芯片公司推出新一代训练芯片",
+      "description": "国内AI芯片初创公司推出新一代AI训练芯片「昆仑芯3代」，性能相比前代提升80%，能效比提升40%。",
       "category": "ai",
-      "source": "商汤科技",
+      "source": "昆仑芯科技",
       "date": "2026-02-28",
-      "url": "https://www.sensetime.com/cn/news-detail/20240822_sensegaming",
-      "readingTime": "7分钟"
+      "url": "https://www.kunlunxin.com/products/k200",
+      "readingTime": "4分钟",
+      "_dynamic": true,
+      "_seed": 65
     }
-  ]
+  ],
+  "_meta": {
+    "dynamicContent": true,
+    "dailyRotating": true,
+    "sources": "mixed"
+  }
 }
